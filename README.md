@@ -2,7 +2,7 @@
 
 Generic configuration files
 
-## SSH Config
+## SSH config example
 
 ```sh
 Host <name>
