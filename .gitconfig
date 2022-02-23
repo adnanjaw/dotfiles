@@ -28,7 +28,7 @@
   ffmerge = "!f() { git refeature $1 && git co develop && git merge $1; } ; f"
   clearbranch = "!f() { git branch -d $1 && git push origin :$1; } ; f"
   please = push --force-with-lease
-  set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+  set-upstream = !git branch --set-upstream-to=origin/`git branch --show-current`
   wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
 [color]
   ui = always
