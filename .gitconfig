@@ -31,6 +31,7 @@
   set-upstream = !git branch --set-upstream-to=origin/`git branch --show-current`
   wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
   cop = checkout - # checkout to the previous branch
+  pu = !git push --set-upstream origin `git branch --show-current` # git push with setting up-stream
 [color]
   ui = always
 [core]
