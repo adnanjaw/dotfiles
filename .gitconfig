@@ -30,6 +30,7 @@
   please = push --force-with-lease
   set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
   wip = for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads
+  cop = checkout - # checkout to the previous branch
 [color]
   ui = always
 [core]
